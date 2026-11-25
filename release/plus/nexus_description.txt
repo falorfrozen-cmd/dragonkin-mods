@@ -64,3 +64,6 @@ Switch it off in the Mods tab, then delete [i]Binaries\Win64\Mods\DragonkinPlus[
 [*]Every file was scanned on VirusTotal: 0 detections.
 [*]Uses Dear ImGui (MIT license).
 [/list]
+
+[size=4][b]Source code[/b][/size]
+The full source of Dragonkin Plus and the Mod Loader is on GitHub: [url=https://github.com/falorfrozen-cmd/dragonkin-mods]github.com/falorfrozen-cmd/dragonkin-mods[/url]
