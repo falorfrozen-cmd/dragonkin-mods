@@ -1,0 +1,51 @@
+[center][size=6][b]Dragonkin Mod Loader[/b][/size]
+[size=3]A mod loader and in-game mod menu for Dragonkin: The Banished[/size]
+[size=3]Press [b]F7[/b] in game[/size][/center]
+
+[size=4][b]What is it?[/b][/size]
+The Mod Loader is the foundation other mods build on. It adds an in-game panel (F7) where you can [b]see every installed mod, switch it on or off and change its settings[/b] — no editing files, no restarting the game.
+
+On its own it does nothing to your game. Install it, then add mods (for example [b]Dragonkin Plus[/b]).
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]One file[/b] ([i]dwmapi.dll[/i]). No other tools needed, no game files are changed.
+[*][b]Mods tab:[/b] every mod in the [i]Mods[/i] folder with its description, an on/off switch and its settings (sliders, checkboxes, buttons, hotkeys).
+[*][b]Mods never fight each other:[/b] every change goes through one shared registry. Two mods changing the same value are combined, and switching a mod off gives the game its own value back.
+[*][b]Safe:[/b] a mod that crashes is switched off — the game keeps running. Mods with program code only run after you tick [b]Allow native code[/b].
+[*][b]The panel never steals focus[/b] and stays on the game's screen in windowed, borderless and fullscreen mode. Drag it wherever you like.
+[*][b]7 languages:[/b] English, Türkçe, Français, Deutsch, العربية, 繁體中文, 简体中文 (Settings tab).
+[*][b]For mod makers:[/b] a Developer tab that inspects the running game live, a simple [i]mod.json[/i] format and a native plugin SDK.
+[/list]
+
+[size=4][b]Installation[/b][/size]
+[list=1]
+[*]Download the main file.
+[*]Extract it into the game folder [i]Dragonkin - The Banished[/i].
+     You should end up with [i]DragonkinTheBanished\Binaries\Win64\dwmapi.dll[/i].
+     (Steam: right-click the game → Manage → Browse local files.)
+[*]Start the game and press [b]F7[/b].
+[/list]
+
+[size=4][b]Installing mods[/b][/size]
+Put the mod's folder into [i]DragonkinTheBanished\Binaries\Win64\Mods\[/i], start the game (or press [b]Reload mods[/b]) and switch it on in the [b]Mods[/b] tab. A mod that contains a program file (DLL) also needs [b]Allow native code[/b] — tick it only for mods you trust.
+
+[size=4][b]Making mods[/b][/size]
+Most mods are a single [i]mod.json[/i] text file — no programming:
+[list]
+[*]Controls: sliders, checkboxes, buttons, hotkeys.
+[*]Effects: change player stats (movement speed, damage, ...), change game data (prices, camera, ...), lock a value, run console commands.
+[/list]
+Advanced mods can ship a native plugin (C/C++) that adds its own tabs to the panel.
+The download contains [i]Binaries\Win64\DragonkinModLoader\docs\MODDING.md[/i], the plugin header [i]sdk\dml_plugin.h[/i] and three example mods (switched off): basics, game data and a native plugin.
+
+[size=4][b]Uninstall[/b][/size]
+Delete [i]dwmapi.dll[/i] from [i]DragonkinTheBanished\Binaries\Win64\[/i]. Optionally also the [i]Mods[/i] and [i]DragonkinModLoader[/i] folders, [i]DragonkinMod.ini[/i] and [i]DragonkinMod.log[/i].
+
+[size=4][b]Good to know[/b][/size]
+[list]
+[*]Made for [b]offline / solo play[/b]. Online cities and co-op are checked by the server; mods do not change that.
+[*]Something wrong? [i]Binaries\Win64\DragonkinMod.log[/i] records every step — please attach it to your bug report.
+[*]Every file was scanned on VirusTotal: 0 detections.
+[*]Uses Dear ImGui (MIT license).
+[/list]

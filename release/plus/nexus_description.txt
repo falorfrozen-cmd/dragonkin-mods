@@ -1,0 +1,66 @@
+[center][size=6][b]Dragonkin Plus[/b][/size]
+[size=3]Multipliers, cheats and quality-of-life — all in one in-game panel[/size]
+[size=3][color=#ff9900][b]Requires the [url=https://www.nexusmods.com/dragonkinthebanished/mods/11]Dragonkin Mod Loader[/url][/b][/color][/size][/center]
+
+[size=4][b]What is it?[/b][/size]
+Dragonkin Plus adds five tabs to the Mod Loader's F7 panel. Everything is changed with sliders and checkboxes [b]while you play[/b], and every change is undone the moment you switch the mod off.
+
+[size=4][b]Multipliers[/b][/size]
+[list]
+[*]XP, wyrmling XP and [b]city XP[/b]
+[*]Gold, equipment drops, equipment and loot quality, materials, eggs, skill fragments, hatch chance
+[*]Pickup range
+[*]Damage, critical damage, max health, healing
+[*]Cooldowns, skill cost, resource gain
+[*]Movement speed, attack speed, dodge distance
+[/list]
+
+[size=4][b]Cheats[/b][/size]
+[list]
+[*]God mode
+[*]Unlimited mana, potions and dodge
+[*]Ultimate always full
+[*]Game speed
+[*]Unlock all waypoints, open the teleport map anywhere
+[*]Attribute points
+[/list]
+
+[size=4][b]Convenience[/b][/size]
+[list]
+[*][b]Camera distance[/b] — zoom out further
+[*]Enemy health and damage
+[*]Extra movement speed in the city
+[*]"I'm stuck!" button and three saved positions per map
+[*][b]Bigger bag and bigger chests[/b]
+[*][b]Sell junk-marked items anywhere[/b]
+[*]Crafting gold cost
+[*]Auto potion at low health
+[*]Hide the level-up notification
+[*]The game's hidden [b]DPS meter[/b]
+[/list]
+
+[size=4][b]Console and Status[/b][/size]
+Developer switches left in the game (for example: always show enemy health bars), plus a live view of the connection state and every player attribute.
+
+[size=4][b]Installation[/b][/size]
+[list=1]
+[*]Install the [url=https://www.nexusmods.com/dragonkinthebanished/mods/11]Dragonkin Mod Loader[/url] first.
+[*]Download this mod and extract it into the game folder [i]Dragonkin - The Banished[/i].
+     You should end up with [i]DragonkinTheBanished\Binaries\Win64\Mods\DragonkinPlus\DragonkinPlus.dll[/i].
+[*]In game press [b]F7[/b] → [b]Mods[/b] → tick [b]Dragonkin Plus[/b] and [b]Allow native code[/b].
+     The five tabs appear immediately.
+[/list]
+
+[size=4][b]Uninstall[/b][/size]
+Switch it off in the Mods tab, then delete [i]Binaries\Win64\Mods\DragonkinPlus[/i].
+[color=#ff5555][b]If you enlarged the bag or chests, empty the extra slots first.[/b][/color] Without the mod the game only has its normal number of slots, and items in the extra slots are lost.
+
+[size=4][b]Good to know[/b][/size]
+[list]
+[*]Made for [b]offline / solo play[/b]. Online cities and co-op are checked by the server.
+[*]A new bag size applies at the next area load, a new chest size at the next game start.
+[*]Settings are saved in [i]Mods\DragonkinPlus\DragonkinPlus.ini[/i]; problems are logged in [i]DragonkinPlus.log[/i] — please attach it to bug reports.
+[*]7 languages, following the Mod Loader's language setting.
+[*]Every file was scanned on VirusTotal: 0 detections.
+[*]Uses Dear ImGui (MIT license).
+[/list]

@@ -1,0 +1,19 @@
+// Dragonkin Plus — the multipliers, cheats and quality-of-life tabs of the F7 panel.
+// Needs the Dragonkin Mod Loader. In the Mods tab: switch it on and tick "Allow native code".
+{
+  "schema": 1,
+  "id": "dragonkin-plus",
+  "name": "Dragonkin Plus",
+  "version": "1.0.0",
+  "author": "Dragonkin Mod Loader",
+  "description": {
+    "en": "Multipliers (XP, gold, loot, damage, speed...), cheats, camera distance, enemy health/damage, bag and chest size, sell junk anywhere, auto potion, DPS meter and more. Adds five tabs to the F7 panel.",
+    "tr": "Çarpanlar (XP, altın, loot, hasar, hız...), hileler, kamera uzaklığı, düşman canı/hasarı, çanta ve sandık boyutu, her yerden çöp satma, otomatik iksir, DPS ölçer ve dahası. F7 paneline beş sekme ekler.",
+    "fr": "Multiplicateurs (XP, or, butin, dégâts, vitesse...), triches, distance de caméra, santé/dégâts des ennemis, taille du sac et des coffres, vente de camelote partout, potion automatique, compteur de DPS et plus. Ajoute cinq onglets au panneau F7.",
+    "de": "Multiplikatoren (EP, Gold, Beute, Schaden, Tempo...), Cheats, Kameraabstand, Gegnergesundheit/-schaden, Taschen- und Truhengröße, Ramsch überall verkaufen, Auto-Trank, DPS-Messer und mehr. Fügt dem F7-Panel fünf Tabs hinzu.",
+    "ar": "مضاعفات (الخبرة، الذهب، الغنائم، الضرر، السرعة...)، غش، مسافة الكاميرا، صحة وضرر الأعداء، حجم الحقيبة والصناديق، بيع الخردة في أي مكان، جرعة تلقائية، عداد الضرر والمزيد. يضيف خمسة تبويبات إلى لوحة F7.",
+    "zh-Hant": "倍率（經驗、金幣、戰利品、傷害、速度…）、作弊、鏡頭距離、敵人生命／傷害、背包與箱子大小、隨處出售垃圾、自動喝藥、DPS 計量器等。為 F7 面板新增五個分頁。",
+    "zh-Hans": "倍率（经验、金币、战利品、伤害、速度…）、作弊、镜头距离、敌人生命／伤害、背包与箱子大小、随处出售垃圾、自动喝药、DPS 计量器等。为 F7 面板新增五个分页。"
+  },
+  "plugin": "DragonkinPlus.dll"
+}

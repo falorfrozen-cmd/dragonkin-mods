@@ -1,0 +1,18 @@
+// Example of a native plugin mod. ExamplePlugin.dll is built from sdk\example\ExamplePlugin.c
+// with sdk\dml_plugin.h. The player must tick "Allow native code" before it is loaded.
+{
+  "schema": 1,
+  "id": "example-plugin",
+  "name": { "en": "Example: Native plugin", "tr": "Örnek: Native eklenti" },
+  "version": "1.0.0",
+  "author": "Dragonkin Mod Loader",
+  "description": {
+    "en": "A tiny C plugin: reports where you are and keeps the potion charges full while its toggle is on.",
+    "tr": "Küçük bir C eklentisi: nerede olduğunu söyler ve aç/kapa açıkken iksir haklarını dolu tutar."
+  },
+  "plugin": "ExamplePlugin.dll",
+  "controls": [
+    { "id": "potions", "type": "toggle", "label": { "en": "Keep potion charges full", "tr": "İksir haklarını dolu tut" }, "default": false },
+    { "id": "where", "type": "button", "label": { "en": "Where am I?", "tr": "Neredeyim?" }, "actions": [ { "plugin": "where" } ] }
+  ]
+}

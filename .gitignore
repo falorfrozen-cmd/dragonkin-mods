@@ -1,0 +1,11 @@
+# build outputs and release archives
+build/
+dist/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+# full-size screenshots (the .jpg versions are kept)
+release/screens/*.png
+__pycache__/

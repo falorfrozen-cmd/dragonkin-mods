@@ -1,0 +1,29 @@
+// Example mod: controls, a built-in multiplier, a console switch, hotkeys and buttons.
+// Copy this folder into Binaries\Win64\Mods\ and press "Reload mods" in the Mods tab.
+{
+  "schema": 1,
+  "id": "example-basics",
+  "name": { "en": "Example: Basics", "tr": "Örnek: Temeller" },
+  "version": "1.0.0",
+  "author": "Dragonkin Mod Loader",
+  "description": {
+    "en": "Shows sliders, toggles, buttons and hotkeys. Run faster, switch enemy health bars with F8, open the teleport map with Ctrl+F9.",
+    "tr": "Slider, aç/kapa, buton ve kısayol örneği. Daha hızlı koş, F8 ile düşman can barlarını aç/kapa, Ctrl+F9 ile ışınlanma haritasını aç."
+  },
+  "controls": [
+    { "id": "speed", "type": "slider", "label": { "en": "Run speed", "tr": "Koşu hızı" },
+      "min": 1, "max": 2, "default": 1.25, "format": "%.2fx",
+      "tooltip": { "en": "Multiplies the movement speed (together with the Multipliers tab).", "tr": "Hareket hızını çarpar (Çarpanlar sekmesiyle birlikte)." } },
+    { "id": "healthbars", "type": "toggle", "label": { "en": "Enemy health bars (F8)", "tr": "Düşman can barları (F8)" }, "default": true },
+    { "id": "map", "type": "button", "label": { "en": "Open teleport map", "tr": "Işınlanma haritasını aç" },
+      "actions": [ { "command": "call pc ToggleTeleportWorldMap" } ] }
+  ],
+  "effects": [
+    { "type": "attribute", "attribute": "MovementSpeedMultiplier", "mode": "multiply", "value": "$speed" },
+    { "type": "console", "when": "$healthbars", "on": "HnS.UI.AlwaysShowHealthBars 1", "off": "HnS.UI.AlwaysShowHealthBars 0" }
+  ],
+  "hotkeys": [
+    { "key": "F8", "toggle": "$healthbars" },
+    { "key": "Ctrl+F9", "actions": [ { "command": "call pc ToggleTeleportWorldMap" } ] }
+  ]
+}

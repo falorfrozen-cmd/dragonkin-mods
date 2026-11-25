@@ -1,0 +1,34 @@
+// Example mod: changing game data through property paths.
+//   "target": one object (pawn, pc, ps, cdo:Class, first:Class, ...)
+//   "class":  every live instance of a class, found in the background as they load
+//   "path":   property names separated by dots; "*" = every element of an array/map,
+//             "[Key]" = one map entry (enum/name key) or "[3]" = one array element.
+//             Object references are followed automatically (m_pCameraBoom.TargetArmLength).
+//   "mode":   multiply (default), set or add. The game's own value is restored when
+//             the mod or the effect is switched off.
+{
+  "schema": 1,
+  "id": "example-properties",
+  "name": { "en": "Example: Game data", "tr": "Örnek: Oyun verisi" },
+  "version": "1.0.0",
+  "author": "Dragonkin Mod Loader",
+  "description": {
+    "en": "Bigger merchant buy-back list, a farther camera and extra health regeneration.",
+    "tr": "Daha büyük tüccar geri alım listesi, daha uzak kamera ve ek can yenilenmesi."
+  },
+  "controls": [
+    { "id": "buyback", "type": "int", "label": { "en": "Buy-back slots", "tr": "Geri alım slotu" },
+      "min": 32, "max": 128, "default": 64, "format": "%d" },
+    { "id": "camera", "type": "slider", "label": { "en": "Camera distance", "tr": "Kamera uzaklığı" },
+      "min": 1, "max": 2.5, "default": 1.4, "format": "%.2fx" },
+    { "id": "regen", "type": "slider", "label": { "en": "Extra health regen / s", "tr": "Ek can yenilenmesi / sn" },
+      "min": 0, "max": 50, "default": 10, "format": "+%.0f" },
+    { "id": "useregen", "type": "toggle", "label": { "en": "Use extra regen", "tr": "Ek yenilenmeyi kullan" }, "default": true }
+  ],
+  "effects": [
+    { "type": "property", "target": "cdo:HnSGlobalConfig",
+      "path": "m_PlayerInventoryCapacityProperties.m_InventorySizes.[MainBuyback]", "mode": "set", "value": "$buyback" },
+    { "type": "property", "class": "HnSCameraView", "path": "m_pCameraBoom.TargetArmLength", "mode": "multiply", "value": "$camera" },
+    { "type": "attribute", "attribute": "HealthRegen", "mode": "add", "value": "$regen", "when": "$useregen" }
+  ]
+}
